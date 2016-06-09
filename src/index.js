@@ -1,11 +1,7 @@
-import React from 'react';
-import { render } from 'react-dom';
-// import Routes from './Routes';
-import App from './App';
-
-/* IMPORT SASS FOR WEBPACK TO COMPILE */
 require('./styles/styles.scss');
 
-render((
-    <App />
-    ), document.getElementById('app'));
+const h1 = document.createElement('h1'),
+      content = document.createTextNode('Webpack Dev Server is up and running!');
+
+h1.appendChild(content);
+document.body.insertBefore(h1, document.body.firstChild);
