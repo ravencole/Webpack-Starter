@@ -1,0 +1,77 @@
+.node {
+    position: fixed;
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+    background-color: $red;
+    box-shadow: inset 0 0 30px black,
+                0 0 0 3px $red;
+    transition: all 600ms ease;
+    & .node--name {
+        position: absolute;
+        top: -80px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 20px;
+        color: rgba(255,255,255,0.4);
+        text-shadow: 0 0 12px rgba(255,255,255,0.4);
+        font-family: monospace;
+        transition: all 600ms ease 200ms;
+    }
+    & .small--border {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        height: 90px;
+        width: 90px;
+        border-radius: 50px;
+        border-right: 3px solid $red;
+        box-shadow: inset 0 0 30px rgba(255,255,255,0.3);
+        transition: all 600ms ease;
+    }
+    & .large--border {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%) rotate(-75deg);
+        height: 110px;
+        width: 110px;
+        border-radius: 70px;
+        border-top: 3px solid $red;
+        border-left: 3px solid $red;
+        transition: all 600ms ease;
+    }
+    &:hover {
+        cursor: pointer;
+        background-color: $lightblue;
+        box-shadow: inset 0 0 30px black,
+                    0 0 0 3px $lightblue,
+                    0 0 150px 0 $highOpacityBlue;
+        & .node--name {
+            color: rgba(255,255,255,0.95);
+            text-shadow: 0 0 12px rgba(255,255,255,0.6);
+        }
+        & .small--border {
+            transform: translateX(-50%) translateY(-50%) rotate(-500deg);
+            box-shadow: inset 0 0 30px $highOpacityBlue;
+            border-color: $lightblue;
+        }
+        & .large--border {
+            transform: translateX(-50%) translateY(-50%) rotate(105deg);
+            box-shadow: 0 0 40px 0 $highOpacityBlue,
+                        inset 0 0 20px $highOpacityBlue;
+            border-color: $lightblue;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
