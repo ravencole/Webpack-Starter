@@ -1,0 +1,72 @@
+.leadership--heading {
+    // margin-top: 10px;
+    @include flex(center, center);
+    font-size: 40px;
+    height: 200px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 0 60px 0 rgba(0,0,0,0.3);
+}
+
+.leadership--container {
+    width: 100%;
+    @include flex(center, center);
+    background-color: white;
+    padding-bottom: 90px;
+}
+
+.blogs--container {
+    flex: 2;
+    height: 100%;
+    @include flex(center, center, column);
+}
+
+.surverys--container {
+    @include flex(center, center, column);
+    flex: 1;
+    height: 100%;
+}
+
+.leadership--item {
+    height: 150px;
+    width: 90%;
+    border-top: 1px solid rgba(0,0,0,0.4);
+    border-bottom: 1px solid rgba(0,0,0,0.4);
+}
+
+.leadership--item__title {
+    height: 50px;
+    font-family: Montserrat;
+    width: 100%;
+    font-size: 20px;
+    padding: 0 20px;
+    @include flex(center, flex-start);
+}
+
+.leadership--item__time {
+    height: 20px;
+    width: 100%;
+    padding-left: 20px;
+    color: rgba(0,0,0,0.4);
+    font-size: 12px
+}
+
+.leadership--item__body {
+    height: 50px;
+    font-size: 12px;
+    padding: 0 60px 0 20px;
+    @include flex(center, center);
+}
+
+.leadership--item__continue {
+    height: 20px;
+    padding-left: 20px;
+    @include flex(center, flex-start);
+    color: $blue;
+    font-size: 12px;
+    font-style: italic;
+}
+
+
+
+

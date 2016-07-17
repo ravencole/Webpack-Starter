@@ -26,6 +26,7 @@
     "react-dom": "^15.1.0",
     "react-router": "^2.4.1",
     "react-router-component": "^0.32.2",
+    "react-scroll": "^1.0.24",
     "request": "^2.72.0",
     "superagent": "^1.8.3"
   },

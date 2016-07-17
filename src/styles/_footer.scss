@@ -1,0 +1,133 @@
+.footer {
+    @include flex(center, center, column);
+    height: 100vh;
+    width: 100%;
+    background-color: $footerBlack;
+    box-shadow: 0 0 30px 0 black;
+    color: $blue;
+    font-size: 18px;
+    font-family: Sintony;
+    z-index: 5;
+}
+
+.footer--title, .footer--body {
+    flex: 1;
+    width: 100%;
+}
+
+.footer--title {
+    @include flex(center, center);
+    font-size: 60px;
+    font-family: Montserrat;
+}
+
+.footer--body {
+    @include flex(center, space-around);
+    & > div {
+        flex: 1;
+    }
+}
+
+.footer--item__icon {
+    height: 150px;
+    width: 100%;
+    @include flex(center, center);
+}
+
+.footer--tel {
+    &:hover .footer--item__icon {
+        animation: telAnimation 400ms ease;
+    }
+}
+
+.footer--email {
+    &:hover .footer--email__icon {
+        transform: rotateY(180deg);
+    }
+    .footer--email__icon {
+        z-index: 10px;
+        transition: all 200ms ease;
+    }
+}
+
+.footer--address {
+    &:hover .footer--item__icon {
+        animation: mapJump 400ms ease;
+    }
+}
+
+.footer--linkedin {
+    & .footer--item__icon img {
+        transition: all 300ms ease;
+    }
+    &:hover .footer--item__icon img {
+        transform: rotate(360deg);
+    }
+}
+
+.footer--item__title {
+    height: 70px;
+    width: 100%;
+    @include flex(center, center);
+}
+
+.footer--item__title__address {
+    height: 70px;
+    width: 100%;
+    @include flex(center, center, column);
+}
+
+.footer--copyright {
+    height: 40px;
+    color: white;
+    font-size: 10px;
+    width: 100%;
+    @include flex(center, flex-start);
+    padding-left: 30px;
+    background-color: black;
+}
+
+@keyframes telAnimation {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-22deg);
+    }
+    50% {
+        transform: rotate(22deg);
+    }
+    75% {
+        transform: rotate(-15deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes mapJump {
+    0% {
+        transform: translateY(0%);
+    }
+    50% {
+        transform: translateY(-20%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

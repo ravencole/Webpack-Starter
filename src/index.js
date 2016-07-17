@@ -1,7 +1,7 @@
 require('./styles/styles.scss');
 
-const h1 = document.createElement('h1'),
-      content = document.createTextNode('Up and Running!');
+import React from 'react';
+import { render } from 'react-dom';
+import App from './App';
 
-h1.appendChild(content);
-document.body.insertBefore(h1, document.body.firstChild);
+render(<App />, document.getElementById('app'));
