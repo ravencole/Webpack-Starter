@@ -1,6 +1,8 @@
 import React from 'react';
 import Scroll from'react-scroll';
 import Nav from './components/Nav';
+import Chart from 'chart.js';
+import { Pie } from 'react-chartjs';
 
 const Link = Scroll.Link,
       Element = Scroll.Element;
