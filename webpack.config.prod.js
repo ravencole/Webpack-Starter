@@ -16,7 +16,7 @@ export default {
   entry: './src/index',
   target: 'web',
   output: {
-    path: __dirname + '/tmp',
+    path: __dirname + '/dist',
     publicPath: '/',
     filename: 'bundle.js'
   },
