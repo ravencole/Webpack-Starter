@@ -1,28 +1,19 @@
-// Generics
-* {
-    box-sizing: border-box;
-    font-family: Cabin, Arial, sans-serif;
-}
+@import 'fonts';
+@import 'mixins';
+@import 'colors';
 
-html, body {
+@import 'nav';
+@import 'landing';
+@import 'testimonial';
+@import 'services';
+@import 'leadership.scss';
+@import 'about';
+@import 'footer';
+
+body, html {
+    width: 100%;
     margin: 0;
     padding: 0;
-    height: 100%;
-    width: 100%;
+    font-family: Rufina;
 }
 
-body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 40px;
-    font-family: Arial;
-    font-weight: 200;
-    text-align: center;
-    color: purple;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-}

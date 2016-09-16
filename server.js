@@ -14,7 +14,7 @@ app.use(require('webpack-dev-middleware')(compiler, {
   publicPath: config.output.publicPath
 }));
 
-// app.use(express.static(__dirname + '/resources'));
+app.use(express.static(__dirname + '/resources'));
 app.use(require('webpack-hot-middleware')(compiler));
 
 app.get('*', function(req, res) {
