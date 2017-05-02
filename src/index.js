@@ -74,4 +74,3 @@ function getRandomBackgroundColor() {
             + getRandomInt(0,255) + ','
             + getRandomInt(0,255) + ')';
 }
-
